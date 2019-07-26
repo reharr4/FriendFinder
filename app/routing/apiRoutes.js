@@ -1,28 +1,16 @@
-var data = require("");
+var friendsData = require("../data/friends");
 
 // routes
 module.exports = function(app){
-    app.get("#", function(req, res){
-        res.json(#);
-    });
-    app.get("#", function(req, res){
-        res.json(#);
+    app.get("/api/friends", function(req, res){
+        res.json(friendsData);
     });
 
-    app.post("#", function(req, res){
-        if (#.length ){
-            #.push(req.body);
+
+    app.post("/api/friends", function(req, res){
+        if (friendsData.length){
+            friendsData.push(req.body);
             res.json(true);
         }
-        else {
-            #.push(req.body);
-            res.json(false);
-        }
-    });
-
-    app.pos("/clear", Function(req, res){
-        #.length = 0;
-        #.length = 0;
-        res.json({ok: true});
     });
 };
