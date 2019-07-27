@@ -32,18 +32,18 @@
                         <form role="form">
                             <div class="form-group">
                                 <label for="userName">First Name (Required)</label>
-                                <input type="text" class="form-control" id="reserve-name">
+                                <input type="text" class="form-control" id="name">
                             </div>
                             <div class="form-group">
                                 <label for="userImage">Link to Photo Image (Required)</label>
-                                <input type="text" class="form-control" id="reserve-phone">
+                                <input type="text" class="form-control" id="photo">
                             </div>
                         </form>
                         <hr>
                         <div class="dropdown">
                             <div class="question">Question 1.</div>
                             <p>You often daydream about having a catch with Chase Utley.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question1"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -56,7 +56,7 @@
                             <br>
                             <div class="question">Question 2.</div>
                             <p>You have an innate ability to write musicals.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question2"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -69,7 +69,7 @@
                             <br>
                             <div class="question">Question 3.</div>
                             <p>You are a golden god.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question3"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -81,8 +81,9 @@
                             </div>
                             <br>
                             <div class="question">Question 4.</div>
-                            <p>You feel a strong connection to and are inspired by those wacky waving inflatable tube guys at car dealerships.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <p>You feel a strong connection to and are inspired by those wacky waving inflatable tube
+                                guys at car dealerships.</p>
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question4"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -95,7 +96,7 @@
                             <br>
                             <div class="question">Question 5.</div>
                             <p>You have a knack for get-rich-quick schemes.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question5"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -108,7 +109,7 @@
                             <br>
                             <div class="question">Question 6.</div>
                             <p>You are actively trying to cultivate mass.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question6"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -121,7 +122,7 @@
                             <br>
                             <div class="question">Question 7.</div>
                             <p>You think pooping the bed is funny.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question7"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -134,7 +135,7 @@
                             <br>
                             <div class="question">Question 8.</div>
                             <p>You are often told that you resemble a bird.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question8"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -147,7 +148,7 @@
                             <br>
                             <div class="question">Question 9.</div>
                             <p>You have a fool-proof system for seducing anyone.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question9"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -160,7 +161,7 @@
                             <br>
                             <div class="question">Question 10.</div>
                             <p>You are obsessed with and often stalk your coffee shop waitress.</p>
-                            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-success dropdown-toggle" type="button" id="question10"
                                 data-toggle="dropwdown" aria-haspopup="true" aria-expanded="false">Select an
                                 Option</button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -181,11 +182,64 @@
 
     <footer class="footer">
         <div class="container">
-            <p>
-                <a href="#">Link</a> | <a href="#">Link</a>
+            <p><a href="/api/friends">Friend List</a> |
+                <a href="https://github.com/reharr4/FriendFinder">Github</a>
         </div>
     </footer>
     </div>
+
+
+    <div id="friendModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Meet your new friend!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img id="friendPhoto" />
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 </body>
 
+<script type="text/javascript">
+    $(".submit").on("click", function(event){
+        event.preventDefault();
+    
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                $("#question1").val().trim(),
+                $("#question2").val().trim(),
+                $("#question3").val().trim(),
+                $("#question4").val().trim(),
+                $("#question5").val().trim(),
+                $("#question6").val().trim(),
+                $("#question7").val().trim(),
+                $("#question8").val().trim(),
+                $("#question9").val().trim(),
+                $("#question10").val().trim()
+            ]
+    };
+
+    $.post("/api/friends", newFriend, function (bestFriend){
+        if (bestFriend){
+            $("#friendName").text(bestFriend.name);
+            $("#friendPhoto").attr("src", bestFriend.photo),
+            $("#friendModal").modal("show")
+        }
+    })
+})
+    </script>
+
 </html>
+
