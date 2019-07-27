@@ -6,9 +6,12 @@
     <title>FriendFinder</title>
 
     <!-- CSS -->
-    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/app/public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -22,177 +25,175 @@
 
         <div class="form-group">
             <label for="userName">First Name (Required)</label>
-            <input type="text" class="form-control" id="name">
-        </div>
-        <div class="form-group">
+            <input type="text" class="form-control" id="userName" aria-required="true">
             <label for="userImage">Link to Photo Image (Required)</label>
-            <input type="text" class="form-control" id="photo">
+            <input type="text" class="form-control" id="photo" aria-required="true">
         </div>
 
         <h3>Question 1.</h3>
         <p>You often daydream about having a catch with Chase Utley.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 2.</h3>
         <p>You have an innate ability to write musicals.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 3.</h3>
         <p>You are a golden god.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 4.</h3>
         <p>You feel a strong connection to and are inspired by those wacky waving inflatable tube
             guys at car dealerships.</p>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-                </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                  <option selected>Choose...</option>
-                  <option value="1">1 (Strongly Disagree)</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5 (Strongly Agree)</option>
-                </select>
-              </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
         <br>
         <h3>Question 5.</h3>
         <p>You have a knack for get-rich-quick schemes.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 6.</h3>
         <p>You are actively trying to cultivate mass.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 7.</h3>
         <p>You think pooping the bed is funny.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 8.</h3>
         <p>You are often told that you resemble a bird.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 9.</h3>
         <p>You have a fool-proof system for seducing anyone.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
+        </div>
         <br>
         <h3>Question 10.</h3>
         <p>You are obsessed with and often stalk the local coffee shop waitress.</p>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
             </div>
             <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose...</option>
-              <option value="1">1 (Strongly Disagree)</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 (Strongly Agree)</option>
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
             </select>
-          </div>
-    <br>
-    <a href="#" type="submit" class="btn btn-success col-lg-12">Submit</a>
+        </div>
+        <br>
+        <a href="#" type="submit" class="btn btn-success col-lg-12">Submit</a>
 
-    </form>
+        </form>
     </div>
 
     <footer class="footer">
@@ -227,11 +228,12 @@
 </body>
 
 <script type="text/javascript">
+
     $("#submit").on("click", function (event) {
         event.preventDefault();
 
         var newFriend = {
-            name: $("#name").val().trim(),
+            name: $("#userName").val().trim(),
             photo: $("#photo").val().trim(),
             scores: [
                 $("#question1").val(),
@@ -255,6 +257,9 @@
             }
         })
     })
+
+   
+
 </script>
 
 </html>
