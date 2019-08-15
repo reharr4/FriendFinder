@@ -191,8 +191,7 @@
             </select>
         </div>
         <br>
-        <a href="#" type="submit" class="btn btn-success col-lg-12">Submit</a>
-
+        <button type="submit" class="btn btn-success col-lg-12">Submit</button>
         </form>
     </div>
 
@@ -205,34 +204,33 @@
     </div>
 
 
-    <div id="friendModal" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+    <div id="friendModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- modal content -->
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Welcome to the gang!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                        <!-- <span aria-hidden="true"></span> -->
                 </div>
                 <div class="modal-body">
-                    <p id="friendName"></p>
-                    <img id="friendPhoto" />
+                    <h2 id="friendName"></h2>
+                    <img id="friendPhoto" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    <button class="btn btn-success" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
-</body>
 
 <script type="text/javascript">
 
     $("#submit").on("click", function (event) {
         event.preventDefault();
 
-        var newFriend = {
+        var userData = {
             name: $("#userName").val().trim(),
             photo: $("#photo").val().trim(),
             scores: [
@@ -249,17 +247,17 @@
             ]
         };
 
-        $.post("/api/friends", newFriend, function (bestFriend) {
+        $.post("/api/friends", userData, function (data) {
             if (bestFriend) {
-                $("#friendName").text(bestFriend.name)
-                $("#friendPhoto").attr("src", bestFriend.photo)
-                $("#friendModal").modal("show")
-            }
-        })
-    })
-
-   
+                $("#friendName").text(data.name);
+                $("#friendPhoto").attr("src", data.photo);
+                $("#friendModal").modal("show");
+            };
+        });
+    });
 
 </script>
+
+</body>
 
 </html>

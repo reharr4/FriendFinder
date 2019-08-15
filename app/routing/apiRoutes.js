@@ -6,23 +6,47 @@ module.exports = function(app){
         res.json(friends);
     });
 
+       app.post("/api/friends", function(req, res){
+           var bestFriend = {
+               name: "",
+               photo: "",
+               friendDifference: Infinity
+           };
 
-    app.post("/api/friends", function(req, res){
-        var friendScores = req.body;
-        console.log(friendScores);
+        //    parse POST result
+        var userData = req.body;
+        var userScores = userData.scores;
 
-        // loop through friends array
-        for (var i =0; i <friendScores.scores.length; i++){
-            friendScores.scores[i] = parseInt(friendScores.scores[i]);
+        // calculate difference between user score and each friend's scores
+        var scoreDifference;
+
+        // loop through friend possibilities
+        for (var i=0; i<friends.length; i++){
+            var currentFriend = friends[i];
+            scoreDifference = 0;
+        
+        console.log(currentFriend.name);
+
+        // loop through scores of each friend
+        for (var s=0; s<currentFriend.scores.length; s++){
+            var currentFriendScore = currentFriend.scores[s];
+            var currentUserScore = userScores[s];
+
+            // calculate difference between scores and add into scoreDifference
+            scoreDifference += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
         }
-
-         // minimum difference of answer score = best friend
-         var minScoreDiff = 0;
-        //  maximum difference of answer scores = least compatable
-        // loop through scores comparing friend and user input one at a time, starting at 0 difference. Add difference to total
-        // i think you would need to compare the total difference to the original minimum score for bestie, updating new minimum if it changes to compare for each subsequent friend in the array
-        // after finding match, push to array
-        friends.push();
+        // if sum is less than differences of curent best math
+        if (scoreDifference <= bestFriend.friendDifference){
+            // reset bestFriend to new friend
+            bestFriend.name = currentFriend.name;
+            bestFriend.photo = currentFriend.photo;
+            bestFriend.friendDifference = scoreDifference; 
         }
-    )
-}
+    }
+        // push to array
+        friends.push(userData);
+
+        // return json
+        res.json(bestFriend);
+        });
+};
