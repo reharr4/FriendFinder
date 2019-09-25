@@ -2,262 +2,315 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>FriendFinder</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FriendFinder</title>
 
-    <!-- CSS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/app/public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap" rel="stylesheet">
-    
+  <!-- CSS & JS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
 </head>
 
+
 <body>
+
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <div class="jumbotron jumbotron-fluid">
-            <h1 class="text-center">FriendFinder</h1>
-            <hr>
-            <h2 class="text-center">Take the Survey</h2>
-            <br>
-        </div>
+      <h1 class="display-4">FriendFinder</h1>
+      <h2 class="lead">Survey Questions</h2>
+    </div>
+  </div>
 
-        <div class="form-group">
-            <label for="userName">First Name (Required)</label>
-            <input type="text" class="form-control" id="userName" aria-required="true">
-            <label for="userImage">Link to Photo Image (Required)</label>
-            <input type="text" class="form-control" id="photo" aria-required="true">
-        </div>
+  <div class="container">
+    <h3><strong>About You</strong></h3>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
 
-        <h3>Question 1.</h3>
-        <p>You often daydream about having a catch with Chase Utley.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 2.</h3>
-        <p>You have an innate ability to write musicals.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 3.</h3>
-        <p>You are a golden god.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 4.</h3>
-        <p>You feel a strong connection to and are inspired by those wacky waving inflatable tube
-            guys at car dealerships.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 5.</h3>
-        <p>You have a knack for get-rich-quick schemes.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 6.</h3>
-        <p>You are actively trying to cultivate mass.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 7.</h3>
-        <p>You think pooping the bed is funny.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 8.</h3>
-        <p>You are often told that you resemble a bird.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 9.</h3>
-        <p>You have a fool-proof system for seducing anyone.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <h3>Question 10.</h3>
-        <p>You are obsessed with and often stalk the local coffee shop waitress.</p>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </div>
-        <br>
-        <button type="submit" class="btn btn-success col-lg-12">Submit</button>
-        </form>
+    <h4>Link to Photo Image (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+
+    <hr>
+
+    <h3>Question 1.</h3>
+    <h4>You often daydream about having a catch with Chase Utley.</h4>
+    <select class="custom-select" id="q1">
+      <option selected>Choose...</option>
+      <option value="1">1 (Strongly Disagree)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Strongly Agree)</option>
+    </select>
+    <br>
+    <h3>Question 2.</h3>
+    <h4>You have an innate ability to write musicals.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q2">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 3.</h3>
+    <h4>You are a golden god.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q3">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 4.</h3>
+    <h4>You feel a strong connection to and are inspired by those wacky waving inflatable tube
+      guys at car dealerships.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q4">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 5.</h3>
+    <h4>You have a knack for get-rich-quick schemes.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q5">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 6.</h3>
+    <h4>You are actively trying to cultivate mass.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q6">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 7.</h3>
+    <h4>You think pooping the bed is funny.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q7">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 8.</h3>
+    <h4>You are often told that you resemble a bird.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q8">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 9.</h3>
+    <h4>You have a fool-proof system for seducing anyone.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q9">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+    <br>
+    <h3>Question 10.</h3>
+    <h4>You are obsessed with and often stalk the local coffee shop waitress.</h4>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+      </div>
+      <select class="custom-select" id="q10">
+        <option selected>Choose...</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
     </div>
 
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-success btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
+
+    <hr>
     <footer class="footer">
-        <div class="container">
-            <a href="/api/friends">Friend List</a> |
-            <a href="https://github.com/reharr4/FriendFinder">Github</a>
-        </div>
+      <div class="container">
+        <a href="/api/friends">Friend List</a> |
+        <a href="https://github.com/reharr4/FriendFinder">Github</a>
+      </div>
     </footer>
+    <br>
     </div>
 
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-    <div id="friendModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Welcome to the gang!</h5>
-                    <button class="close" data-dismiss="modal">&times;</button>
-                        <!-- <span aria-hidden="true"></span> -->
-                </div>
-                <div class="modal-body">
-                    <h2 id="friendName"></h2>
-                    <img id="friendPhoto" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-success" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
         </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
     </div>
+  </div>
 
+  <script type="text/javascript">
+    // Chosen CSS
+    var config = {
+      ".chosen-select": {},
+      ".chosen-select-deselect": {
+        allow_single_deselect: true
+      },
+      ".chosen-select-no-single": {
+        disable_search_threshold: 10
+      },
+      ".chosen-select-no-results": {
+        no_results_text: "Oops, nothing found!"
+      },
+      ".chosen-select-width": {
+        width: "95%"
+      }
+    };
 
-<script type="text/javascript">
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
 
+    // Capture the form inputs
     $("#submit").on("click", function (event) {
-        event.preventDefault();
+      event.preventDefault();
 
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $(".form-control").each(function () {
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+
+        $(".chosen-select").each(function () {
+
+          if ($(this).val() === "") {
+            isValid = false;
+          }
+        });
+        return isValid;
+      }
+
+      // If all required fields are filled
+      if (validateForm()) {
+        // Create an object for the user"s data
         var userData = {
-            name: $("#userName").val().trim(),
-            photo: $("#photo").val().trim(),
-            scores: [
-                $("#question1").val(),
-                $("#question2").val(),
-                $("#question3").val(),
-                $("#question4").val(),
-                $("#question5").val(),
-                $("#question6").val(),
-                $("#question7").val(),
-                $("#question8").val(),
-                $("#question9").val(),
-                $("#question10").val()
-            ]
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
         };
 
+        // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function (data) {
-            if (bestFriend) {
-                $("#friendName").text(data.name);
-                $("#friendPhoto").attr("src", data.photo);
-                $("#friendModal").modal("show");
-            };
-        });
-    });
 
-</script>
+          // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+          $("#match-name").text(data.name);
+          $("#match-img").attr("src", data.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
+
+        });
+      } else {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+  </script>
 
 </body>
 
 </html>
+
+</head>

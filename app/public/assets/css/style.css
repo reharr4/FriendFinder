@@ -1,0 +1,10 @@
+body{
+    background: url("../images/shamrock.jpg");
+}
+.container{
+    background-color: white;
+}
+.jumbotron{
+    background: url("../images/shamrock.jpg");
+    text-align: center;
+}
