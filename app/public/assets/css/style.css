@@ -8,3 +8,6 @@ body{
     background: url("../images/shamrock.jpg");
     text-align: center;
 }
+.modal{
+    align-content: center;
+}
