@@ -9,9 +9,9 @@ Our server.js file sets up the Express server, specifying our port number, the n
 
 There are 2 separate HTML files (home.html and survey.html) that serve as the front-end portion of our code; they determine what the user sees (the homepage and the survey, which will also show the resulting best match)
 
-![FriendFinder Home Page](screenshots/home.jpg)
+![FriendFinder Home Page]("screenshots/home.jpg")
 
-![FriendFinder Survey](screenshots/survey.jpg)
+![FriendFinder Survey]("screenshots/survey.jpg")
 
 Our 2 routing files (htmlRoutes.js and apiRoutes.js) determine the back-end logic (based on the request being made, the response that gets sent to the browser); the HTML routes display the survey and the homepage based on the URL that is accessed, and the API routes send back existing content in our server-side data or add new friends
 
@@ -19,7 +19,7 @@ Best match is calculated by finding the friend with the minimal difference in sc
 
 A modal is then toggled, displaying the the best match to the person who just took the survey
 
-![Best Friend Match](screenshots/match.jpg)
+![Best Friend Match]("screenshots/match.jpg")
 
 ## Requirements
 Modularity in the form of separate files for server logic, storing of friends, views, and routing
